@@ -1,9 +1,10 @@
 /********** Template CSS **********/
 :root {
-    --primary: #4294e3;
-    --secondary: rgb(66, 6, 6);
-    --light: #f0f6ff;
-    --dark: #262b47;
+    --primary: green;
+    --secondary: green; 
+    --light:/*  #f0f3f8; */
+    --dark: green; /* #264728; */
+
 }
 
 /*** Spinner ***/
@@ -25,6 +26,21 @@ h1,
 h2,
 .fw-bold {
     font-weight: 700 !important;
+    color: #bbbe08;
+    display: flex;
+    justify-content: center;
+}
+
+p {
+    color: #dddddd;
+    display: flex;
+    justify-content: center;
+
+}
+
+a {
+    display: flex;
+    justify-content: center;
 }
 
 h3,
@@ -41,13 +57,12 @@ h6,
 
 /*** Gradient Text & BG ***/
 .text-primary-gradient {
-    background: linear-gradient(
+    background: url(/img/studio.jpg) linear-gradient(
         to bottom right,
         var(--primary),
-        var(--secondary)
-    );
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
+        var(--secondary) 
+    )
+    
 }
 
 .text-secondary-gradient {
@@ -56,26 +71,23 @@ h6,
         var(--secondary),
         var(--primary)
     );
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
+    
 }
 
-.bg-primary-gradient {
-    background: linear-gradient(
+ .bg-primary-gradient {
+    background:linear-gradient(
         to bottom right,
         var(--primary),
         var(--secondary)
-    );
+    ); 
 }
-
 .bg-secondary-gradient {
     background: linear-gradient(
         to bottom right,
         var(--secondary),
         var(--primary)
-    );
-}
-
+    ); 
+} 
 /*** Button ***/
 .btn {
     transition: 0.5s;
@@ -86,9 +98,9 @@ h6,
     position: relative;
     overflow: hidden;
     border: none;
-    color: #ffffff;
+    color: #bbbe08;
     z-index: 1;
-}
+} 
 
 .btn.btn-primary-gradient::after,
 .btn.btn-secondary-gradient::after {
@@ -101,7 +113,7 @@ h6,
     transition: 0.5s;
     z-index: -1;
     opacity: 0;
-}
+} 
 
 .btn.btn-primary-gradient,
 .btn.btn-secondary-gradient::after {
@@ -174,7 +186,7 @@ h6,
     font-family: 'Jost', sans-serif;
     font-size: 18px;
     font-weight: 500;
-    color: var(--light) !important;
+    color: white  var(--light) !important; 
     outline: none;
     transition: 0.5s;
 }
@@ -182,15 +194,16 @@ h6,
 .navbar-light .navbar-nav .nav-link::before {
     position: absolute;
     content: '';
+    
     width: 0;
     height: 0;
     top: -10px;
     left: 50%;
     transform: translateX(-50%);
     border: 10px solid;
-    border-color: var(--light) transparent transparent transparent;
+    border-color:white transparent transparent transparent; 
     transition: 0.5s;
-}
+} 
 
 .sticky-top.navbar-light .navbar-nav .nav-link {
     padding: 20px 0;
@@ -204,7 +217,7 @@ h6,
 
 .navbar-light .navbar-brand h1 {
     color: #ffffff;
-}
+} */
 
 .navbar-light .navbar-brand img {
     max-height: 60px;
@@ -467,11 +480,12 @@ h6,
 .footer {
     margin-top: 6rem;
     padding-top: 9rem;
-    background: url(../img/bg-circle.png), url(../img/bg-triangle.png),
-        url(../img/bg-top.png),
+    background: url(../img/bg-circle.png), url(/img/mis\ and\ note.jpg),
+        url(/img/bg-top.png),
         linear-gradient(to bottom right, var(--primary), var(--secondary));
-    background-position: left 0px bottom 0px, right 0px top 50%, center top;
-    background-repeat: no-repeat;
+    background-position: left 0px bottom 0px, right 0px top 10%, center top;
+    background-repeat: repeat;
+    opacity: 1;
 }
 
 .footer .btn.btn-social {
@@ -521,7 +535,7 @@ h6,
 }
 
 .footer .copyright a {
-    color: var(--light);
+    color: yellowgreen;
 }
 
 .footer .footer-menu a {
